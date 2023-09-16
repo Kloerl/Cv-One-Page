@@ -1,5 +1,7 @@
 :root {
     --main-color: #2AFAB3;
+    --secondary-color:#2afab562;
+    --font-color: #292929;
 }
 
 * {
@@ -16,10 +18,92 @@ header {
     background-color: var(--main-color);
 }
 
-p {
-    color: #1c1c1c;
+/* p {
+    font-family: 'Barlow', sans-serif;
+    font-weight: 600;
+    font-size: 3rem;
+    color: #292929;
     margin: 15px;
+} */
+.section_formation {
+    margin-left: 2rem;
 }
+
+h1, .date, ul {
+    font-family: 'Barlow', sans-serif;
+    color: var(--font-color);
+}
+
+h2, .formation_place {
+    font-family: 'Raleway', sans-serif;
+    color: var(--font-color);
+}
+
+h1 {
+    text-decoration: underline;
+    font-size: 1.7rem;
+    padding-top: 1.5rem;
+}
+
+.date {
+    font-weight: 200;
+    font-size: 1rem;
+    margin-left: 1rem;
+    margin-top: 1.2rem;
+    padding: 0.1rem;
+}
+
+/* .date span{
+    padding: 0rem 0.5rem 0rem 0.5rem;
+    border: 1px var(--main-color) solid;
+    border-radius: 10px;
+    background-color: var(--main-color);
+} */
+
+h2 {
+    font-size: 1.4rem;
+    margin-top: 0.2rem;
+}
+
+.formation_place {
+    font-style: italic;
+    font-weight: 200;
+    font-size: 0.8rem;
+    margin-left: 1rem;
+    margin-bottom: 0.4rem;
+
+}
+
+ul {
+    font-weight: 500;
+    list-style-type: circle;
+}
+
+li {
+}
+
+/* TRY */
+
+mark {
+    -webkit-animation: 1.5s highlight 1.5s 1 normal forwards;
+            animation: 1.5s highlight 1.5s 1 normal forwards;
+    background-color: none;
+    background: linear-gradient(90deg, var(--secondary-color) 50%, rgba(255, 255, 255, 0) 50%);
+    background-size: 200% 100%;
+    background-position: 100% 0;
+  }
+  
+  @-webkit-keyframes highlight {
+    to {
+      background-position: 0 0;
+    }
+  }
+  
+  @keyframes highlight {
+    to {
+      background-position: 0 0;
+    }
+  }
 
 #profile {
     position: relative;
@@ -36,6 +120,5 @@ footer {
     width: 100%;
     background-color: var(--main-color);
     padding: 1rem;
-    position: fixed;
     bottom: 0;
 }
