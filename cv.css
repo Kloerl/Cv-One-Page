@@ -111,7 +111,7 @@ h2, .formation_place {
 
 h2.alternance {
     font-size: 3.35rem;
-    border: 2px var(--main-color) solid;
+    /* border: 1px var(--main-color) solid; */
     border-radius: 15px;
 }
 p.alternance {
@@ -121,14 +121,14 @@ p.alternance {
 .list {
     list-style-type: none;
     font-family: 'Raleway', sans-serif;
-    font-size: 1.5rem;
-    font-weight: 300;
+    font-size: 1rem;
+    /* font-weight: 300; */
     color: var(--font-color);
     line-height: 50px;
-    text-align: center;
+    text-align: left;
 }
-/* 
-ul li::before {
+
+/* ul li::before {
     content: "\2022";
     color: var(--main-color);
     font-weight: bold;
